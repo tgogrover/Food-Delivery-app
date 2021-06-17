@@ -1,0 +1,32 @@
+{
+  "name": "resumecreator",
+  "version": "1.0.0",
+  "description": "cretes resume with different styling sheets",
+  "main": "main_Router.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "let's",
+    "begin"
+  ],
+  "author": "tannu",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.11",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "html-pdf": "^2.2.0",
+    "html-pdf-node": "^1.0.7",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.15",
+    "mongoose-type-email": "^1.1.2",
+    "node-localstorage": "^2.1.6",
+    "nodemon": "^2.0.7",
+    "path": "^0.12.7",
+    "pdfkit": "^0.11.0"
+  }
+}
