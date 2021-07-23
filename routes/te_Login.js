@@ -4,7 +4,7 @@ const bcrypt=require('bcrypt');
 const userDetails=require('../data_Models/sign_Models');
 const jwt=require('jsonwebtoken');
 
-console.log(Error)
+
 
 
 if (typeof localStorage === "undefined" || localStorage === null) {
@@ -20,7 +20,7 @@ const legalLogin=async(req,res,next)=>{
     const legalEmail=userDetails.findOne({Email:email});
     await legalEmail.exec((err,data)=>{
         if(err){
-            console.log(err)
+             console.log(err)
             res.render('login',{ Message: "Something went wrong", title: 'Resume Creator' })
         }
         if(data){

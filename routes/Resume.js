@@ -96,6 +96,7 @@ router.post('/resume',authorization_of_User,async(req,res)=>{
             if (err) {
                 res.send(err);
              } else {
+                var loginUser=localStorage.getItem('loginEmail');
               res.render('dashboard',{title:'Resume Creator',Your_Email:loginUser,Authorized_User:loginUser,Message:"Pdf Created successful"})
           }
         })

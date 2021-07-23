@@ -11,17 +11,17 @@
     <title><%= title %></title>
   </head>
   <body>
-    <div class="container">
+    <div class="container" style="width:50%">
       <div class="row">
         <h2 class="text-center"><%= title %></h2>
-          <div id="signupbox" style="margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+          <div id="signupbox"  style="margin-top:20px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
                        </div> 
     <h1>You can Signin Here !</h1>
-    <div class="panel-body">
+    <div  class="panel-body">
       <% if(Message !=''){ %>
         <p style="text-align: center">   <%= Message %></p>
         <% } %>
-          <form action="/tesignin" id="EmployeeForm" class="form-horizontal" method="post"  role="form">
+          <form action="/tesignin" id="EmployeeForm"  class="form-horizontal" method="post"  role="form">
               
               <div id="signupalert" style="display:none" class="alert alert-danger">
                   <p>Error:</p>
@@ -30,7 +30,7 @@
     
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <input type="email" class="form-control"  name="email" id="exampleInputEmail1" aria-describedby="emailHelp">
           <div id="emailHelp"  class="form-text">We'll never share your email with anyone else.</div>
         </div>
         <div class="mb-3">
@@ -42,20 +42,8 @@
           <input type="text" class="form-control" name="name" placeholder="Write Your Name Here">
         </div>
         <div class="mb-3">
-          <label class="form-label">Graduation Starting Year</label>
-          <input type="number" class="form-control" name="startYear" placeholder="In which Year you start your Graduation ?">
-        </div>
-         <div class="mb-3">
-          <label  class="form-label">Graduation Completes in Year</label>
-          <input type="number" class="form-control" name="endingYear" placeholder="In which Year your Graduation Ends ?">
-        </div>
-        <div class="mb-3">
           <label  class="form-label">Qualification</label>
           <input type="text" class="form-control" name="qualification" placeholder="Enter Your Qualification">
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
         <p>Already have a Registered Account? <a href="/telogin">Login Here</a></p>

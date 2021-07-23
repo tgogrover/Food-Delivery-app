@@ -43,16 +43,12 @@ router.post('/tesignin',legalSign,async(req,res)=>{
  const name=req.body.name;
  const email=req.body.email;
  const qualification=req.body.qualification;
- const startYear=req.body.startYear;
- const endingYear=req.body.endingYear;
  const password=req.body.password;
  const Hash_Password=bcrypt.hashSync(password,10);
  
  const userData=new userDetails({
      Name:name,
      Email:email,
-     Graduation_starts_in_year:startYear,
-     Graduation_completes_in_year:endingYear,
      Qualification:qualification,
      Password:Hash_Password
  })

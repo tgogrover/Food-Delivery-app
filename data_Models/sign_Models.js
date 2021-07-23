@@ -21,17 +21,6 @@ var sign_Schema =new mongoose.Schema({
         type:String,
         required:true
     },
-    Graduation_starts_in_year:{
-        type:Number,
-        require:true,
-        trim:true
-        
-    },
-    Graduation_completes_in_year:{
-        type:Number,
-        required:true,
-        trim:true
-    },
     Password:{
         type:String,
         required:true,
